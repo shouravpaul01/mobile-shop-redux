@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dashboard */
+/* .menu-item {
+  @apply p-4 text-base-content 
+} */
+
+.menu-item li a {
+  @apply flex items-center gap-2 hover:bg-white hover:text-violet-700 hover:font-bold rounded-md py-2 px-3 
+}
+
+.menu-item-active {
+  @apply bg-violet-700 text-white
+}

@@ -105,7 +105,7 @@ const AdminLayout = () => {
               </Link> */}
             </div>
           </div>
-          <ul className="menu-item gap-1 p-4 w-80 min-h-full bg-base-200 text-base-content">
+          <ul className="menu-item p-4 w-80 min-h-full bg-base-200 text-base-content">
             {/* Sidebar content here */}
             <li>
               <NavLink
@@ -116,6 +116,14 @@ const AdminLayout = () => {
                 }
               >
                  Dashboard
+              </NavLink>
+              <NavLink
+                to={"/dashboard/category"}
+                className={({ isActive }) =>
+                  isActive ? "menu-item-active" : ""
+                }
+              >
+                 Category
               </NavLink>
             </li>
            
