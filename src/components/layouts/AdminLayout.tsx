@@ -1,6 +1,7 @@
-import { FaBars, FaCircleUser, FaRightToBracket, FaUser } from "react-icons/fa6"
+import { FaBars, FaBorderAll, FaCircleUser, FaHouse, FaRightToBracket, FaUser } from "react-icons/fa6"
 import { Link, NavLink, Outlet } from "react-router-dom"
 import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css";
 
 const AdminLayout = () => {
   return (
@@ -93,7 +94,7 @@ const AdminLayout = () => {
 
             <div className="text-center pb-3 font-bold ">
               <p className="text-xl md:text-2xl text-violet-800">
-                BD Cinema House
+                Mobile Shop
               </p>
             </div>
             <div>
@@ -115,7 +116,7 @@ const AdminLayout = () => {
                   isActive ? "menu-item-active" : ""
                 }
               >
-                 Dashboard
+                <FaHouse /> Dashboard
               </NavLink>
               <NavLink
                 to={"/dashboard/category"}
@@ -123,7 +124,7 @@ const AdminLayout = () => {
                   isActive ? "menu-item-active" : ""
                 }
               >
-                 Category
+                <FaBorderAll /> Brand
               </NavLink>
             </li>
            

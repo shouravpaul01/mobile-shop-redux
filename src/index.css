@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Main */
+.label-text{
+  @apply text-base py-[2px]
+}
+
 /* Dashboard */
 /* .menu-item {
   @apply p-4 text-base-content 

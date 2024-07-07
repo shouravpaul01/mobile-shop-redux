@@ -1,7 +1,8 @@
 
 import { createBrowserRouter } from "react-router-dom";
 import AdminLayout from "../components/layouts/AdminLayout";
-import Category from "../pages/admin/category/Category";
+import Brand from "../pages/admin/brand/Brand";
+
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +11,7 @@ export const router = createBrowserRouter([
     children:[
       {
         path:"category",
-        element:<Category/>
+        element:<Brand/>
       }
     ]
   },
